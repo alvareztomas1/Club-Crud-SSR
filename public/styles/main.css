@@ -1,0 +1,216 @@
+/*
+
+FORMA ANTERIOR 
+
+body{
+    background-color: #F5ECD7;
+    font-family: sans-serif;
+    text-align: center;
+}
+.home-page{
+    display: grid;
+}
+.title{
+    color: #68a67d;
+    font-size: 50px;
+    margin: 30px;
+}
+}
+.containter{
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    background-color: #5f5f5f;
+    margin: auto;
+    display: block;
+    width: 60%;
+    
+}
+.team-list{
+    display: inline-table;
+}
+
+*/
+
+/*FORMA ACTUAL
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+    background-color: #5f5f5f;
+    font-family: sans-serif;
+    text-align: center;
+}
+body{
+    font-size: 1rem;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 200px 1fr 80px;
+    min-height: 100vh;
+}
+header, main, footer{
+    padding: 20px;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main
+}
+footer{
+    grid-area: footer
+}
+
+.team-container{
+    font-size: 20px;
+    color: white;
+    border: 3px #F5ECD7 solid;
+    border-radius: 1%;
+    margin: auto;
+    display: flow;
+    width: 50%;
+    padding: 20px;
+}
+.title{
+    color: #F5ECD7;
+    font-size: 50px;
+    margin: 30px;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.edit{
+    background-color: #78a788;
+}
+.edit:hover{
+    background-color: #aae5be;
+
+}
+.delete{
+    background-color: #833500;
+}
+.delete:hover{
+    background-color: #993e01;
+}
+.info{
+    background-color: #db8401;
+}
+.info:hover{
+    background-color: #ffa115;
+}
+.club-logo{
+    height: 60px;
+}
+
+.header-button{
+    border: 1px white solid;
+    background-color: transparent;
+    font-size: 20px;
+    color: #F5ECD7;
+}
+.header-button:hover{
+    background-color: #F5ECD7;
+    color:#5f5f5f
+}
+.home-buttons{
+    display: block;
+    width: fit-content;
+    margin: auto;
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+    background-color: #5f5f5f;
+    text-align: center;
+    color: white;
+
+}
+.club-logo{
+    height: 60px;
+}
+.list-name{
+    color: white;
+}
+.list-name:hover{
+    font-size: 25px;
+}
+.logo-home:hover{
+    height: 70px;
+}
+.display-6{
+    font-size: 1.5rem;
+}
+.selection{
+    padding: 15px;
+}
+.selection:hover{
+    border: 2px solid white;
+}
+.table{
+    width: 90%;
+    margin: auto;
+}
+.current-button{
+    color:rgb(227, 199, 199);
+    text-decoration: none;
+    font-size: 30px;
+}
+.current-button:hover{
+    color:white;
+
+}
+.web{
+    color: white;
+}
+.web:hover{
+    color: #877e7e;
+}
+.team-info{
+    padding: 20px;
+    width: 50%;
+    background-color: #353535;
+    margin: auto;
+    border-radius: 1%;
+}
+.add-team{
+    width: 60%;
+    margin: auto;
+}
+.logo-file{
+    width: 82%;
+}
+.modal{
+    color: #353535
+}
+.toast{
+    color: #353535
+
+}
