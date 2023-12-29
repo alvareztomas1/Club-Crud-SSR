@@ -1,0 +1,109 @@
+<br>
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form h5">Club Name</label>
+    <div class="col">
+        <input type="text"
+            class="form-control is-{{#if validation}}{{#if validation.name}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="name" id="name" placeholder="Arsenal FC" value="{{{teamData.name}}}" required>
+        <div class="invalid-feedback">
+            Please enter a valid club name. It must be between 3 and 30 characters.
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form h5">Shortname</label>
+    <div class="col">
+        <input type="text"
+            class="form-control is-{{#if validation}}{{#if validation.tla}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="tla" id="shortname" placeholder="ARS" value="{{{teamData.tla}}}" required>
+        <div class="invalid-feedback">
+            Please enter a valid shortname. It must be a three capital letters.
+        </div>
+    </div>
+</div>
+<br>
+<div class="form-group row">
+    <label for="website" class="col-sm-2 col-form h5">Web</label>
+    <div class="col">
+        <input type="text"
+            class="form-control is-{{#if validation}}{{#if validation.website}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="website" id="website" placeholder="http://www.arsenal.com" value="{{{teamData.website}}}">
+        <div class="invalid-feedback">
+            Please enter a valid website. It must match the example.
+        </div>
+    </div>
+</div>
+<br>
+<div class="form-group row">
+    <label for="phone" class="col-sm-2 col-form h5">Phone</label>
+    <div class="col">
+        <input type="text"
+            class="form-control is-{{#if validation}}{{#if validation.phone}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="phone" id="phone" placeholder="+44 (020) 76195003" value="{{{teamData.phone}}}">
+        <div class="invalid-feedback">
+            Please enter a valid phone number. It must follow the international format.
+        </div>
+    </div>
+
+</div>
+<br>
+<div class="form-group row">
+    <label for="founded-year" class="col-sm-2 col-form h5">Founded Year</label>
+    <div class="col">
+        <input type="number"
+            class="form-control is-{{#if validation}}{{#if validation.founded}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="founded" id="founded-year" placeholder="1886" value="{{{teamData.founded}}}" required>
+        <div class="invalid-feedback">
+            Please enter a valid founded year. It must be Between 1857 and current year.
+        </div>
+    </div>
+</div>
+<br>
+<div class="form-group row">
+    <label for="address" class="col-sm-2 col-form h5">Address</label>
+    <div class="col">
+        <input type="text"
+            class="form-control is-{{#if validation}}{{#if validation.address}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="address" id="address" placeholder="75 Drayton Park London N5 1BU" value="{{{teamData.address}}}"
+            required>
+        <div class="invalid-feedback">
+            Please enter a valid address. The valid special characters are: - , . ' °'.
+        </div>
+    </div>
+</div>
+<br>
+<div class="form-group row">
+    <label for="stadium" class="col-sm-2 col-form h5">Stadium</label>
+    <div class="col">
+        <input type="text"
+            class="form-control is-{{#if validation}}{{#if validation.venue}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="venue" id="stadium" placeholder="Emirates Stadium" value="{{{teamData.venue}}}" required>
+        <div class="invalid-feedback">
+            Please enter a valid stadium name. It must be between 3 and 30 characters and not contain special characters.
+        </div>
+    </div>
+</div>
+<br>
+<div class="form-group row">
+    <label for="inputEmail" class="col-sm-2 col-form h5">Email</label>
+    <div class="col">
+        <input type="email"
+            class="form-control is-{{#if validation}}{{#if validation.email}}valid{{else}}invalid{{/if}}{{else}}""{{/if}}"
+            name="email"  placeholder="info@arsenal.co.uk" value="{{{teamData.email}}}">
+        <div class="invalid-feedback">
+            Please enter a valid email. It must follow the generic format.
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="form-group row">
+    <label for="logo" class="col col-form h5">Logo</label>
+    <input class="form-control logo-file" type="file" name="crestUrl" id="logo">
+</div>
+
+</div>
+<br>

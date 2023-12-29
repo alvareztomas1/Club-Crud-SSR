@@ -1,0 +1,17 @@
+<title>Edit {{{teamData.name}}}</title>
+
+<form action="/edit/{{{teamData.tla}}}/{{{teamData.id}}}" method="POST" enctype="multipart/form-data">
+    <div class="add-team">
+        <br>
+        <h1><img class="club-logo" src={{{teamData.crestUrl}}}> {{{teamData.name}}} Data </h1>
+
+
+        {{>edit-team/form teamData=teamData}}
+
+
+        <button type="submit" href="/" class="btn btn-primary">Edit team <i class="bi bi-send"></i></button>
+        <a class="btn btn-secondary" href="/">Back <i class="bi bi-arrow-left"></i></a>
+
+
+</form>
+<br>
