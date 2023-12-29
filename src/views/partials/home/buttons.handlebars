@@ -1,0 +1,15 @@
+<div class="col">
+    <a class="btn btn-primary" href="/info/{{{data.tla}}}/{{{data.id}}}">Info <i
+            class="bi bi-arrows-angle-expand"></i></a>
+    <a class="btn btn-secondary" href="/edit/{{{data.tla}}}/{{{data.id}}}">Edit <i class="bi bi-pencil-square"></i> </a>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{{data.tla}}}">
+        Delete <i class="bi bi-trash"></i>
+    </button>
+
+    {{>modal/modal teamInfo = data}}
+
+    
+
+
+</div>

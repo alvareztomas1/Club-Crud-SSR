@@ -1,0 +1,25 @@
+<br>
+
+<div id="teams-list" class="container">
+
+    {{#each teamsData as |data|}}
+
+        <div class="row justify-content-md-center selection" id={{{data.id}}}>
+
+            <div class="col">
+                <a href="/info/{{{data.tla}}}/{{{data.id}}}"><img class="club-logo logo-home"
+                        src={{{data.crestUrl}}}></a>
+            </div>
+            <div class="col">
+                <a href="/info/{{{data.tla}}}/{{{data.id}}}">
+                    <h1 class="display-6 list-name">{{{data.name}}}</h1>
+                </a>
+
+            </div>
+            {{>home/buttons data = data}}
+            <p></p>
+        </div>
+
+    {{/each}}
+
+</div>
