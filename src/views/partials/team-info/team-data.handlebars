@@ -1,0 +1,45 @@
+<br>
+<h2>Contact</h2>
+
+{{#if teamInfo.phone}}
+<h1 class="display-6">
+    <i class="bi bi-telephone"></i> {{{teamInfo.phone}}}
+</h1>
+{{/if}}
+
+{{#if teamInfo.email}}
+<h1 class="display-6">
+    <i class="bi bi-envelope"></i> {{{teamInfo.email}}}
+</h1>
+{{/if}}
+
+{{#if teamInfo.website}}
+<h1 class="display-6">
+    <i class="bi bi-globe"></i>
+    <a href={{{teamInfo.website}}} class="display-6 web" target="_blank">{{{teamInfo.website}}}</a>
+</h1>
+{{/if}}
+
+<br>
+
+<h2>Team Info</h2>
+
+
+{{#if teamInfo.website}}
+    <h1 class="display-6"> <i class="bi bi-flag"></i> Founded year: {{{teamInfo.founded}}}</h1>
+{{/if}}
+{{#if teamInfo.website}}
+    <h1 class="display-6"> <i class="bi bi-house"></i> Stadium: {{{teamInfo.venue}}}</h1>
+{{/if}}
+{{#if teamInfo.website}}
+    <h1 class="display-6"> <i class="bi bi-geo-alt"></i> Address: {{{teamInfo.address}}}</h1>
+{{/if}}
+
+<p></p>
+
+
+
+
+
+</div>
+<br>

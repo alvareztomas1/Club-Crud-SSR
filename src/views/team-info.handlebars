@@ -1,0 +1,22 @@
+<br>
+<title>{{{teamInfo.name}}}</title>
+<link rel="shortcut icon" href={{{teamInfo.logo}}} />
+
+<div class="team-info" id="team-info">
+
+    <h1 class="display-5"> <img class="club-logo" src={{{teamInfo.crestUrl}}}> {{{teamInfo.name}}} </h1>
+
+    {{>team-info/team-data teamInfo = teamInfo}}
+
+
+</div>
+<div id="buttons">
+    <a class="btn btn-primary" href="/edit/{{{teamInfo.tla}}}/{{{teamInfo.id}}}">Edit <iclass="bi bi-pencil-square"></i></a>
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{{teamInfo.tla}}}">
+        Delete <i class="bi bi-trash"></i>
+    </button>
+    <a class="btn btn-secondary" href="/">Back <i class="bi bi-arrow-left"></i></a>
+
+    {{>modal/modal teamInfo = teamInfo}}
+</div>
+<br>
